@@ -9,3 +9,7 @@ async def root():
     return {"message": "Hello World"}
 
 
+@router.post("/assignWithCsv")
+def soldier_deployment():
+    
+    return {"message": "root "}
