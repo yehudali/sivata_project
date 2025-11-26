@@ -1,4 +1,4 @@
-from models.soldiers import Soldiers
+from .soldiers import Soldiers
 class Room:
     def __init__(self, room_num:int=0):
         self.room_number = room_num

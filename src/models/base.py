@@ -1,9 +1,11 @@
-from models.house import House
+from .house import House
 
 class Base:
-    def __init__(self, base_name: str):
+    def __init__(self, base_name: str,hous:House):
         self.base_name=base_name
         self.houses=[]
+        
+        self.add_house(hous)
 
     def add_house(self,house: House):
         self.houses.append(house)
